@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+
+    <!-- navbar -->
+    <div class="navbar bg-primary text-light">
+      <h1>Dice Game</h1>
+    </div>
+
+    <!-- body -->
+    <div class="">
+        <div class="d-flex justify-content-center mt-4 gap-5">
+            <div class=" border border-2 border shadow-lg border-dark p-5 w-auto">
+                <h1>Player1</h1>
+                <img class="mt-2" src="./diceimage/dice6.jpg" id="p1dice" alt="" /><br />
+                <button class="btn text-light bg-primary mt-3 " id="roll1" onclick="p1play()" disabled>Roll Dice</button>
+            </div>
+            <div class=" border border-2 border shadow-lg border-dark p-5 w-auto">
+                <h1>Player2</h1>
+                <img class="mt-2" src="./diceimage/dice6.jpg" id="p2dice" alt="" /><br />
+                <button class="btn text-light bg-primary mt-4 " id="roll2" onclick="p2play()" disabled>Roll Dice</button>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center gap-5 ms-4 mt-5 ">
+            <div>
+                <div class="d-grid gap-5">
+                    <h1>Score Broard</h1>
+                </div class="d-grid m-5">
+                <div class="d-flex gap-3 ">
+                    <div class="d-grid ">
+                        <p class="me-4">Player 1</p>
+                        <label for="p1Score" id="p1sc">0</label>
+                        <button class="btn btn-success " "type="button"  id="start" onclick="start()">Start Game</button>
+
+                    </div>
+                    <div class="d-grid ">
+                        <p class="ms-5">Player 2</p>
+                        <label for="p2Score" id="p2sc">0</label>
+                        
+                        <button class="btn btn-danger text-white me-5 "type="button"  id="restart" onclick="restart() " disabled >Restart Game</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
