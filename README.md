@@ -25,6 +25,3 @@ Players take turns rolling the dice, and the **first player to reach 100 points 
 - **JavaScript (Vanilla JS)**
 
 ---
-
-## 📂 Project Structure
-
